@@ -1,0 +1,20 @@
+version: 4.1.30
+steps:
+  - prompt: Scroll to the bottom of the page.
+    commands:
+      - command: scroll
+        direction: down
+      - command: hover-text
+        text: Contact Wikipedia
+        description: link to contact Wikipedia
+        action: click
+      - command: hover-text
+        text: Contact Wikipedia
+        description: link to contact Wikipedia
+        action: click
+  - prompt: Click on the "Contact us" link.
+    commands:
+      - command: hover-text
+        text: Contact us
+        description: link to contact Wikipedia
+        action: click
