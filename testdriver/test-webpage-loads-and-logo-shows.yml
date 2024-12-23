@@ -1,0 +1,26 @@
+version: 4.1.30
+steps:
+  - prompt: Open the browser and navigate to the website.
+    commands:
+      - command: press-keys
+        keys:
+          - enter
+  - prompt: >-
+      Assert that the Wikipedia logo is visible on the page.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: the page displays "Example Domain"
+      - command: hover-text
+        text: example.com
+        description: address bar in Google Chrome
+        action: click
+      - command: type
+        text: https://www.wikipedia.org
+      - command: press-keys
+        keys:
+          - enter
+      - command: wait
+        timeout: 5000
+      - command: assert
+        expect: the Wikipedia logo is visible on the page
