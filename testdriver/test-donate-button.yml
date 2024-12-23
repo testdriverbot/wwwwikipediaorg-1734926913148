@@ -1,0 +1,11 @@
+version: 4.1.30
+steps:
+  - prompt: Locate the "Donate now" button on the right.
+    commands:
+      - command: hover-text
+        text: Donate now
+        description: donation button on the right panel
+        action: click
+      - command: scroll-until-text
+        text: Donate now
+        direction: down
