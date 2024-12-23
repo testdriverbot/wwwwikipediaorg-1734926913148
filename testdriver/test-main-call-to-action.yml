@@ -1,0 +1,16 @@
+version: 4.1.30
+steps:
+  - prompt: Click on "Read Wikipedia in your language."
+    commands:
+      - command: hover-text
+        text: Read Wikipedia in your language
+        description: button below the search bar on the Wikipedia homepage
+        action: click
+  - prompt: >-
+      Assert that the language selection page loads.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the language selection page is displayed with "Read Wikipedia in your
+          language" visible
