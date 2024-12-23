@@ -1,0 +1,39 @@
+version: 4.1.30
+steps:
+  - prompt: Focus on the search input field.
+    commands:
+      - command: hover-text
+        text: Search Wikipedia
+        description: search input field on Wikipedia homepage
+        action: click
+  - prompt: Focus on the search input field.
+    commands:
+      - command: hover-text
+        text: Search Wikipedia
+        description: search input field on Wikipedia homepage
+        action: click
+      - command: hover-text
+        text: Search Wikipedia
+        description: search input field on Wikipedia homepage
+        action: click
+      - command: hover-image
+        description: search icon next to the search input field on Wikipedia homepage
+        action: click
+  - prompt: Focus on the search input field.
+    commands:
+      - command: hover-text
+        text: Search
+        description: search input field on Wikipedia search page
+        action: click
+  - prompt: Focus on the search input field.
+    commands:
+      - command: hover-text
+        text: Search Wikipedia
+        description: search input field on Wikipedia search page
+        action: click
+  - prompt: Focus on the search input field.
+    commands:
+      - command: hover-text
+        text: Search Wikipedia
+        description: search input field in the header
+        action: click
